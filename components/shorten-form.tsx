@@ -24,7 +24,7 @@ export default function ShortenForm({ handleUrlShortened }: ShortenFormProps) {
                 }),
             });
             await response.json();
-            setUrl('');
+            setUrl(``);
             handleUrlShortened;
         } catch(error) {
             console.error('Error shortening URL:', error);            
