@@ -28,6 +28,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        {/* Footer */}
+        <footer className="text-center py-6 mt-12">
+          <p>&copy; 2025. <a href="http://www.marfinpro.com" style={{ color: '#c32aa3' }}>www.marfinpro.com</a>. All rights reserved.</p>
+        </footer>
       </body>
     </html>
   );
