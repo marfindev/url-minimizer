@@ -102,9 +102,13 @@ export default function UrlList() {
                     className="text-muted-foreground hover:bg-muted"
                     onClick={() => handleCopyUrl(url.shortCode)}
                 >                    
-                    {copied && copyUrl == url.shortCode ? (                    
+                    {copied ? (
+                        copyUrl == url.shortCode ? (
                         <Check className="w-4 h-4"/>
-                    ) : (    
+                    ) : (
+                        <CopyIcon className="w-4 h-4"/>
+                    )
+                    ) : (
                         <CopyIcon className="w-4 h-4"/>
                     )}                    
                     <span className="sr-only">Copy URL</span>
